@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.white{
+    color: #FFFFFF;
+}
+.orange{
+   color: #FF5841; 
+}
+.red-violet{
+    color:#C53678 ;
+}
