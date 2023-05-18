@@ -1,0 +1,45 @@
+[
+    {
+      "picture": "product1.jpg",
+      "name": "Product 1",
+      "price": 10.99,
+      "rating": 4.5,
+      "status" : "spider-man"
+    },
+    {
+      "picture": "product2.jpg",
+      "name": "Product 2",
+      "price": 19.99,
+      "rating": 3.8,
+      "status" : "spider-man"
+    },
+    {
+      "picture": "product3.jpg",
+      "name": "Product 3",
+      "price": 7.99,
+      "rating": 4.2,
+      "status" : "iron-man"
+    },
+    {
+      "picture": "product4.jpg",
+      "name": "Product 4",
+      "price": 14.99,
+      "rating": 4.7,
+      "status" : "iron-man"
+    },
+    {
+      "picture": "product5.jpg",
+      "name": "Product 5",
+      "price": 9.99,
+      "rating": 3.5,
+      "status" : "hulk"
+    },
+    {
+        "picture": "product5.jpg",
+        "name": "Product 6",
+        "price": 8.99,
+        "rating": 6.5,
+        "status" : "hulk"
+      }
+  ]
+  
