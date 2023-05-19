@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg'
+import { useContext } from 'react';
+import { AuthContext } from '../../../Providers/AuthProvider';
+
 const Navber = () => {
+
+    const {user} = useContext(AuthContext)
 
     const navItem = <>
         <li className='red-violet text-lg'><Link to='/'>Home</Link></li>
@@ -34,10 +39,24 @@ const Navber = () => {
             </ul>
         </div>
 
-        <div className="navbar-end">
-            <a className="btn">Get started</a>
+        <div className=' justify-end'>
+            {
+                user && <div className="w-10 rounded-full">
+                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              </div>
+            }
+        {
+            user ?
+            <button>Log Out</button> : 
+            <Link to='/login'>
+                <button>login</button>
+            </Link>
+        }
         </div>
+           
+       
         
+
         </div>
     );
 };
