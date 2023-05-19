@@ -5,7 +5,16 @@ import { AuthContext } from '../../../Providers/AuthProvider';
 
 const Navber = () => {
 
-    const {user} = useContext(AuthContext)
+    const {user, logOut} = useContext(AuthContext);
+    const handleLogOut = () => {
+        logOut()
+        .then()
+        .catch(error => {
+            console.log(error)
+        })
+
+    }
+
 
     const navItem = <>
         <li className='red-violet text-lg'><Link to='/'>Home</Link></li>
@@ -39,7 +48,7 @@ const Navber = () => {
             </ul>
         </div>
 
-        <div className=' justify-end'>
+        <div className="navbar-end">
             {
                 user && <div className="w-10 rounded-full">
                 <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
@@ -47,7 +56,7 @@ const Navber = () => {
             }
         {
             user ?
-            <button>Log Out</button> : 
+            <button onClick={handleLogOut}>Log Out</button> : 
             <Link to='/login'>
                 <button>login</button>
             </Link>

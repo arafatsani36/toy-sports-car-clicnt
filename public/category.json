@@ -1,42 +1,42 @@
 [
     {
-      "picture": "product1.jpg",
-      "name": "Product 1",
+      "picture": "https://i.ibb.co/Ry0dCz9/s1.jpg",
+      "name": "Spider Man",
       "price": 10.99,
       "rating": 4.5,
       "status" : "spider-man"
     },
     {
-      "picture": "product2.jpg",
-      "name": "Product 2",
+      "picture": "https://i.ibb.co/N6NBNSj/s2.jpg",
+      "name": "Spider Man",
       "price": 19.99,
       "rating": 3.8,
       "status" : "spider-man"
     },
     {
-      "picture": "product3.jpg",
-      "name": "Product 3",
+      "picture": "https://i.ibb.co/xgHwDZG/i3.jpg",
+      "name": "Iron Man",
       "price": 7.99,
       "rating": 4.2,
       "status" : "iron-man"
     },
     {
-      "picture": "product4.jpg",
-      "name": "Product 4",
+      "picture": "https://i.ibb.co/NtQKgL8/i4.jpg",
+      "name": "Iron Man",
       "price": 14.99,
       "rating": 4.7,
       "status" : "iron-man"
     },
     {
-      "picture": "product5.jpg",
-      "name": "Product 5",
+      "picture": "https://i.ibb.co/Tc65Q3B/h1.jpg",
+      "name": "Hulk",
       "price": 9.99,
       "rating": 3.5,
       "status" : "hulk"
     },
     {
-        "picture": "product5.jpg",
-        "name": "Product 6",
+        "picture": "https://i.ibb.co/3Ng3V58/h2.jpg",
+        "name": "Hulk",
         "price": 8.99,
         "rating": 6.5,
         "status" : "hulk"
