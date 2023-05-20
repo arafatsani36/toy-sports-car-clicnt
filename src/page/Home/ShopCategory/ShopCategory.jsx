@@ -14,14 +14,6 @@ const ShopCategory = () => {
         .then(res => res.json())
         .then(data => allShops(data))
     }, [activeShops])
-    // console.log(shops)
-    //  const result = shops?.filter (shop => shop.status == activeShops);
-    //  allShops(result)
-    // useEffect(() => {
-    //     fetch('result')
-
-    // },[])
-   
     const  handleShop = tabName => {
         AllActiveShops(tabName)
     }
@@ -33,7 +25,7 @@ const ShopCategory = () => {
             <Tabs>
                 <TabList>
                     <Tab onClick={() => handleShop("spider-man")}>Spideman</Tab>
-                    <Tab onClick={() => handleShop("iron-man")}>iron man</Tab>
+                    <Tab onClick={() => handleShop("iron-man")}>Iron man</Tab>
                     <Tab onClick={() => handleShop("hulk")}>Hulk</Tab>
                 </TabList>
                 { 

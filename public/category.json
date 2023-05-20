@@ -4,42 +4,100 @@
       "name": "Spider Man",
       "price": 10.99,
       "rating": 4.5,
-      "status" : "spider-man"
+      "status": "spider-man",
+      "seller_name": "Crafty Commerce",
+      "seller_email": "crafty@gmail.com",
+      "available_quantity": "5",
+      "detail_description":"Imagine swinging into the newest Spider-Man Adventure with Spider-Man figures, vehicles, and role-play items inspired by the Marvel Comics. With this classic inspired line of toys, kids can imagine the web-slinging, wall-crawling action as Spider-Man faces new challenges and new villains. Products each sold separately. Subject to availability. imagine the web-slinging hero swinging through the city with this Spider-Man figure from the Titan hero series! When kids connect the Titan hero blast gear launcher (not included; sold separately with Titan hero blast gear figures) to this figure's arm port, they can activate sound effects and launch projectiles! titan hero blast gear launcher sold with Titan hero blast gear figures. Each sold separately. Subject to availability." 
     },
     {
       "picture": "https://i.ibb.co/N6NBNSj/s2.jpg",
       "name": "Spider Man",
       "price": 19.99,
       "rating": 3.8,
-      "status" : "spider-man"
+      "status" : "spider-man",
+      "seller_name": "Virtual Victory",
+      "seller_email": "virtual@gmail.com",
+      "available_quantity": "20",
+      "detail_description":"High above the ground, swinging through the streets, Spider-Man stops criminals that seem impossible to beat!  This collectible 3.75-inch-scale Marvel Legends figure is detailed to look like the Spider-Man character from Marvel Comics, featuring premium detail and multiple points of articulation.  With over 80 years of entertainment history, Marvel has become a cornerstone of fan collections around the world. With the Marvel Legends Series, fan favorite Marvel Comic Universe and Marvel Cinematic Universe characters are designed with premium detail and articulation for posing and display in collections. From figures to vehicles to premium roleplay items, the Marvel Legends Series offers elite character-inspired products for Marvel fans and collectors. Additional figures each sold separately. (Subject to availability.) Copyright 2022 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
+    },
+    {
+      "picture": "https://i.ibb.co/nBHpWyF/s3.webp",
+      "name": "Spider Man",
+      "price": 19.99,
+      "rating": 3.8,
+      "status" : "spider-man",
+      "seller_name": "InterwebDeals",
+      "seller_email": "interwebdeals@gmail.com",
+      "available_quantity": "14",
+      "detail_description":"Look out: here comes Marvel’s Spider-Man Muscle Chest Box Set. This full-sleeved muscle chest costume top is based on Peter Parker's original spider suit and will transform your child into the iconic web head. The suit’s chest, shoulders, and torso is stuffed with polyfill and features a printed design of Spidey’s classic emblem. It also includes a fabric Spider-Man mask with white mesh inside the eyes. Collect Marvel’s Spider-Man Muscle Chest Box Set and watch your child fuse great power with great responsibility. Officially licensed Marvel product from Jazwares."
     },
     {
       "picture": "https://i.ibb.co/xgHwDZG/i3.jpg",
       "name": "Iron Man",
       "price": 7.99,
       "rating": 4.2,
-      "status" : "iron-man"
+      "status" : "iron-man",
+      "seller_name": "Value Store",
+      "seller_email": "value@gmail.com",
+      "available_quantity": "10",
+      "detail_description":"Nothing on Earth is more powerful than the incredible Iron Man. His supersonic suit blasts through the sky armed with incredible energy weapons and super strength. No matter where in the world the bad guys are hiding, Iron Man is ready to zoom in and blast 'em. Super-size your superhero adventures with the armored Avenger. This Titan Hero Series Iron Man figure has a supersonic suit and he's ready to open up a repulsor-blasting attack on the foes of justice everywhere. With him on your side, there's no telling where your Avengers adventures will take you. Hasbro and all related terms are trademarks of Hasbro."
+
     },
     {
       "picture": "https://i.ibb.co/NtQKgL8/i4.jpg",
       "name": "Iron Man",
       "price": 14.99,
       "rating": 4.7,
-      "status" : "iron-man"
+      "status" : "iron-man",
+      "seller_name": "Retail Round Up",
+      "seller_email": "retail@gmail.com",
+      "available_quantity": "15",
+      "detail_description":"Tony Stark suits up a high-tech suit to protect the world as Iron Man. Imagine leaping into adventure with Avengers figures, vehicles, and roleplay items inspired by the Marvel comics. With this classic inspired line of toys, kids can imagine all the Avengers action with their favorite heroes including Hulk, Black Panther, Captain America and Captain Marvel. Products each sold separately. Subject to availability. Kids can imagine the heroic Avengers leaping into battle with this Avengers figure from the Titan Hero Series! When kids connect the Titan Hero Blast Gear launcher to this figure’s back port, they can launch projectiles! Titan Hero Blast Gear launcher sold with Titan Hero Blast Gear figures. Each sold separately. Subject to availability. Copyright 2019 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
+    },
+    {
+      "picture": "https://i.ibb.co/PMckdGT/i5.jpg",
+      "name": "Iron Man",
+      "price": 14.99,
+      "rating": 4.7,
+      "status" : "iron-man",
+      "seller_name": "The Further",
+      "seller_email": "further@gmail.com",
+      "available_quantity": "30",
+      "detail_description":"When he’s not driving flashy cars and attending VIP parties, billionaire philanthropist Tony Stark is helping the Avengers save the world as Iron Man! There’s more to being a super hero than capes and fancy suits. Being a super hero is about defending justice and knowing when it’s time to fight as a team! Kids can imagine powering up for action alongside their favorite super heroes, like Iron Man, Captain America, Spider-Man, Black Widow, Hulk, Black Panther, Thor, and more, with Avengers figures and roleplay! Avengers, Assemble! With the NERF Power Moves Marvel Avengers Iron Man Repulsor Blast roleplay toy, kids ages 5 and up can imagine gearing up like Tony Stark to become super hero Iron Man! Boys and girls will love pretending they are Iron Man, pulling back the primer handle on the Repulsor Blast gauntlet toy and mimicking Iron Man’s signature Repulsor Blast move to launch a NERF dart! Copyright 2022 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
     },
     {
       "picture": "https://i.ibb.co/Tc65Q3B/h1.jpg",
       "name": "Hulk",
       "price": 9.99,
       "rating": 3.5,
-      "status" : "hulk"
+      "status" : "hulk",
+      "seller_name": "The Gigantic",
+      "seller_email": "gigantic@gmail.com",
+      "available_quantity": "25",
+      "detail_description":"It’s Spidey time! This Marvel Spidey and His Amazing Friends toy comes with a Hulk action figure and a Smash Truck vehicle for action-packed play. The 4-inch figure can really sit in the car, so preschoolers can imagine zooming to the rescue with the Spidey Team. With this preschool Marvel figure and vehicle set, fun is just a ride away! This Hulk toy set makes a great holiday or birthday gift for kids ages 3 and up who love Super Hero adventures! Look for more Spidey and His Amazing Friends vehicle and figure sets, including Spidey, Miles Morales: Spider-Man, Black Panther, and Ghost-Spider. (Each sold separately. Subject to availability.) Copyright MARVEL. All trademarks and registered trademarks are the property of their respective owners. Hasbro and all related terms are trademarks of Hasbro."
     },
     {
         "picture": "https://i.ibb.co/3Ng3V58/h2.jpg",
         "name": "Hulk",
         "price": 8.99,
         "rating": 6.5,
-        "status" : "hulk"
-      }
+        "status" : "hulk",
+        "seller_name": "The Gigantic",
+        "seller_email": "gigantic@gmail.com",
+        "available_quantity": "25",
+        "detail_description":"It’s Spidey time! This Marvel Spidey and His Amazing Friends toy comes with a Hulk action figure and a Smash Truck vehicle for action-packed play. The 4-inch figure can really sit in the car, so preschoolers can imagine zooming to the rescue with the Spidey Team. With this preschool Marvel figure and vehicle set, fun is just a ride away! This Hulk toy set makes a great holiday or birthday gift for kids ages 3 and up who love Super Hero adventures! Look for more Spidey and His Amazing Friends vehicle and figure sets, including Spidey, Miles Morales: Spider-Man, Black Panther, and Ghost-Spider. (Each sold separately. Subject to availability.) Copyright MARVEL. All trademarks and registered trademarks are the property of their respective owners. Hasbro and all related terms are trademarks of Hasbro."
+    },
+    {
+      "picture": "https://i.ibb.co/Hgn9VMT/h3.jpg",
+      "name": "Hulk",
+      "price": 8.99,
+      "rating": 6.5,
+      "status" : "hulk",
+      "seller_name": "Better Buying",
+      "seller_email": "Better Buying@gmail.com",
+      "available_quantity": "25",
+      "detail_description":"It’s Spidey time! This Marvel Spidey and His Amazing Friends toy comes with a Hulk action figure and a Smash Truck vehicle for action-packed play. The 4-inch figure can really sit in the car, so preschoolers can imagine zooming to the rescue with the Spidey Team. With this preschool Marvel figure and vehicle set, fun is just a ride away! This Hulk toy set makes a great holiday or birthday gift for kids ages 3 and up who love Super Hero adventures! Look for more Spidey and His Amazing Friends vehicle and figure sets, including Spidey, Miles Morales: Spider-Man, Black Panther, and Ghost-Spider. (Each sold separately. Subject to availability.) Copyright MARVEL. All trademarks and registered trademarks are the property of their respective owners. Hasbro and all related terms are trademarks of Hasbro."
+  }
   ]
   

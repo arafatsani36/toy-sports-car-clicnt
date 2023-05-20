@@ -19,6 +19,7 @@ const Navber = () => {
     const navItem = <>
         <li className='red-violet text-lg'><Link to='/'>Home</Link></li>
         <li  className='red-violet text-lg'><Link to='/blog'>Blog</Link></li>
+        <li  className='red-violet text-lg'><Link to='/alltoys'>All Toys</Link></li>
 
     </>
 
