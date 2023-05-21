@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import MyToy from "./MyToy";
 
 const MyToys = () => {
     const {user} = useContext(AuthContext);
@@ -24,19 +25,19 @@ const MyToys = () => {
                 <th>Sub-category</th> 
                 <th>Price</th> 
                 <th>Available Quantity</th> 
-                <th>Favorite Color</th>
+                <th>Detail description</th>
+                <th>Update</th>
+                <th>Delete</th>
             </tr>
             </thead> 
             <tbody>
-            <tr>
-                <th>1</th> 
-                <td>Cy Ganderton</td> 
-                <td>Quality Control Specialist</td> 
-                <td>Littel, Schaden and Vandervort</td> 
-                <td>Canada</td> 
-                <td>12/16/2020</td> 
-                <td>Blue</td>
-            </tr>
+
+                {
+                    toys.map(toy => <MyToy key={toy._id} toy={toy}></MyToy>)
+                }
+
+
+            
             
             </tbody> 
         </table>

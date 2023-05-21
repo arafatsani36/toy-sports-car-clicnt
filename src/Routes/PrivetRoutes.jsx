@@ -5,8 +5,8 @@ import { Navigate } from "react-router-dom";
 const PrivetRoutes = ({children}) => {
     const {user, loder} = useContext(AuthContext);
 
-    if(){
-        return <progress className="progress w-56 progress-error"></progress>
+    if(loder){
+        return <progress className="progress w-56 progress-error mx-auto"></progress>
     }
 
     if(user?.email){
