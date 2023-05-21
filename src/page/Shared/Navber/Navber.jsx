@@ -20,7 +20,14 @@ const Navber = () => {
         <li className='red-violet text-lg'><Link to='/'>Home</Link></li>
         <li  className='red-violet text-lg'><Link to='/blog'>Blog</Link></li>
         <li  className='red-violet text-lg'><Link to='/alltoys'>All Toys</Link></li>
-        <li  className='red-violet text-lg'><Link to='/addtoy'>Add Toy</Link></li>
+
+        {
+            user ?.email && <> <li  className='red-violet text-lg'><Link to='/addtoy'>Add Toys</Link></li>
+            <li  className='red-violet text-lg'><Link to='/mytoy'>My Toys</Link></li> 
+            </>
+           
+        }
+        
 
         
 
