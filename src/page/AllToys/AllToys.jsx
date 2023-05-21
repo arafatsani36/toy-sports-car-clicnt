@@ -1,5 +1,8 @@
 
 const AllToys = () => {
+
+    
+
     return (
         <div className="overflow-x-auto">
   <table className="table table-compact w-full">

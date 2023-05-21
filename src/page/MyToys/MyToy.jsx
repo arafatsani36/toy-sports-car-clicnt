@@ -1,7 +1,10 @@
+import Swal from "sweetalert2";
 
-const MyToy = ({toy}) => {
-    const {sellerName, toyname, category, price, quantity, description} =toy
-    // console.log(toy)
+const MyToy = ({toy, handleDelete}) => {
+
+    const {_id, sellerName, toyname, category, price, quantity, description} = toy;
+
+    
 
     return (
         <tr>
@@ -13,7 +16,7 @@ const MyToy = ({toy}) => {
         <td>{toy.quantity}</td>
         <td><button className="btn btn-sm">View Details</button></td>
         <td><button className="btn btn-sm btn-info">Update</button></td>
-        <td><button className="btn btn-sm btn-error">Delete</button></td>
+        <td><button onClick={() => handleDelete(_id)} className="btn btn-sm btn-error">Delete</button></td>
       </tr>
     );
 };
