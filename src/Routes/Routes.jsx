@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         {
           path:'/singletoy/:_id',
           element:<PrivetRoutes><SingleToy></SingleToy></PrivetRoutes>,
-          loader: ({params}) => fetch('http://localhost:5000/category')
+          loader: ({params}) => fetch('https://toy-sports-car-server-nine.vercel.app/category')
         },
         {
           path:'addtoy',
@@ -47,12 +47,12 @@ const router = createBrowserRouter([
         {  
           path:'mytoy/updatetoys/:id',
           element:<PrivetRoutes><UpdateToys></UpdateToys></PrivetRoutes>,
-          loader:({params}) => fetch(`http://localhost:5000/toys/${params.id}`)       
+          loader:({params}) => fetch(`https://toy-sports-car-server-nine.vercel.app/toys/${params.id}`)       
         },
         {  
           path:'alltoys/singletoydetails/:id',
           element:<PrivetRoutes><SingleToyDetails></SingleToyDetails></PrivetRoutes>,
-          loader:({params}) => fetch(`http://localhost:5000/toys/${params.id}`)       
+          loader:({params}) => fetch(`https://toy-sports-car-server-nine.vercel.app/toys/${params.id}`)       
         },
         
         

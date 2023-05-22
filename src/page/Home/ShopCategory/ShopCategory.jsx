@@ -10,7 +10,7 @@ const ShopCategory = () => {
      const [activeShops, AllActiveShops] = useState("spider-man");
 
     useEffect(() => {
-        fetch(`http://localhost:5000/category/${activeShops}`)
+        fetch(`https://toy-sports-car-server-nine.vercel.app/category/${activeShops}`)
         .then(res => res.json())
         .then(data => allShops(data))
     }, [activeShops])
