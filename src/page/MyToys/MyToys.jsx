@@ -13,7 +13,7 @@ const MyToys = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setToys(data))
-    },[])
+    },[url])
 
     const handleDelete = id => {
         Swal.fire({
@@ -58,6 +58,7 @@ const MyToys = () => {
 
                           const remaining = toys.filter(toy => toy._id !== id);
                           setToys(remaining);
+                          
                     }
                 } 
                 )
@@ -66,11 +67,10 @@ const MyToys = () => {
     }
 
     return (
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto p-10 mb-10">
         <table className="table table-compact w-full">
             <thead>
             <tr>
-                <th></th> 
                 <th>Seller Info</th> 
                 <th>Toy Name</th> 
                 <th>Sub-category</th> 

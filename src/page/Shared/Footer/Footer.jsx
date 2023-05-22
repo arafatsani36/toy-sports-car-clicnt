@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import logo from '../../../assets/logo.svg';
+import logo from '../../../assets/logo.jpg';
 import { FaFacebookF, FaInstagram, FaTwitter, FaTelegramPlane} from "react-icons/fa";
 
 const Footer = () => {
     return (
-     <div>
+     <div className="mt-5">
     <footer className="footer p-10 bg-base-200 text-base-content orange-bg">
     <div>
         <span className="footer-title">Services</span>
@@ -29,8 +29,8 @@ const Footer = () => {
     </footer> 
     <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 orange-bg">
     <div className="items-center grid-flow-col">
-        <img src={logo} alt="" />
-        <p>Toy shop Ltd. <br/>Providing reliable tech since 1992</p>
+        <img className="w-10" src={logo} alt="" />
+        <p>copyright @toy stop </p>
     </div> 
     <div className="md:place-self-center md:justify-self-end">
         <div className="grid grid-flow-col gap-4">

@@ -122,6 +122,9 @@ const AddToy = () => {
                    <input type="text" name="quantity" placeholder="Available Quantity" className="input input-bordered" />
                    </div>
 
+                   <label className="label">
+                       <span className="label-text">Detail Description</span>
+                   </label>
                    <textarea className="textarea textarea-error" name="description" placeholder="Detail Description"></textarea>
 
                    <div className="form-control mt-6">

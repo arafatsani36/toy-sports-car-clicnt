@@ -10,6 +10,8 @@ import SingleToy from "../page/SingleToy/SingleToy";
 import AddToy from "../page/AddToy/AddToy";
 import MyToys from "../page/MyToys/MyToys";
 import PrivetRoutes from "./PrivetRoutes";
+import UpdateToys from "../page/UpdateToys/UpdateToys";
+import SingleToyDetails from "../page/SingleToyDetails/SingleToyDetails";
 
 const router = createBrowserRouter([
     {
@@ -31,7 +33,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/singletoy/:_id',
-          element:<SingleToy></SingleToy>,
+          element:<PrivetRoutes><SingleToy></SingleToy></PrivetRoutes>,
           loader: ({params}) => fetch('http://localhost:5000/category')
         },
         {
@@ -42,6 +44,18 @@ const router = createBrowserRouter([
           path:'mytoy',
           element:<PrivetRoutes><MyToys></MyToys></PrivetRoutes>
         },
+        {  
+          path:'mytoy/updatetoys/:id',
+          element:<PrivetRoutes><UpdateToys></UpdateToys></PrivetRoutes>,
+          loader:({params}) => fetch(`http://localhost:5000/toys/${params.id}`)       
+        },
+        {  
+          path:'alltoys/singletoydetails/:id',
+          element:<PrivetRoutes><SingleToyDetails></SingleToyDetails></PrivetRoutes>,
+          loader:({params}) => fetch(`http://localhost:5000/toys/${params.id}`)       
+        },
+        
+        
         {
           path: 'login',
           element: <Login></Login>
@@ -53,6 +67,7 @@ const router = createBrowserRouter([
         
       ]
     },
+
   ]);
 
 export default router;

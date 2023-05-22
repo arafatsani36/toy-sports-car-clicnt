@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../../../assets/logo.svg'
+import logo from '../../../assets/logo.jpg'
 import { useContext } from 'react';
 import { AuthContext } from '../../../Providers/AuthProvider';
 
@@ -48,7 +48,7 @@ const Navber = () => {
 
            
             <Link to='/' className='flex justify-items-center items-center'><a className="btn btn-ghost normal-case text-xl ">
-              <img src={logo} alt="" /></a>
+              <img className=' w-8' src={logo} alt="" /></a>
               <h2 className='text-lg font-bold'>Toy Stop</h2>
             </Link> 
             
@@ -63,7 +63,7 @@ const Navber = () => {
         <div className="navbar-end">
             {
                 user && <div className="w-10 rounded-full">
-                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                <img src={user.photoURL} />
               </div>
             }
         {

@@ -4,8 +4,8 @@ import app from "../firebase/firebase.config";
 
 export const AuthContext = createContext();
  const auth = getAuth(app);
- 
- const provider = new GoogleAuthProvider();
+
+ const Provider = new GoogleAuthProvider();
  
 const AuthProvider = ({children}) => {
     const [user, setUser]  = useState(null);
@@ -25,9 +25,11 @@ const AuthProvider = ({children}) => {
         return signOut(auth)
     }
 
-    const googleSingIn = (auth, provider) => {
-        return signInWithPopup(auth, provider);
+    const googleSingIn = () => {
+        return signInWithPopup(auth, Provider);
     }
+
+
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
@@ -47,7 +49,7 @@ const AuthProvider = ({children}) => {
         singIn,
         logOut,
         loder,
-        googleSingIn
+        googleSingIn,
     }
 
     return (
