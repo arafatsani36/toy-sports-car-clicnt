@@ -63,7 +63,7 @@ const Navber = () => {
         <div className="navbar-end">
             {
                 user && <div className="w-10 rounded-full">
-                <img src={} />
+                
               </div>
             }
         {
