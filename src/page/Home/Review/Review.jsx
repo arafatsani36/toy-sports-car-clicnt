@@ -1,73 +1,80 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+import { useEffect, useState } from 'react';
+import { BsFillChatRightQuoteFill} from 'react-icons/bs';
+import { Rating } from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
 
 const Review = () => {
-    return (
-        <div className="carousel w-full mx-auto mt-10 mb-10">
-        <div id="slide1" className="carousel-item relative w-full">
-          <div className="flex gap-5 w-1/2 mx-auto">
-            <div className="avatar">
-            <div className="w-24 rounded-full">
-                <img src="https://i.ibb.co/BTQGF8B/p1.jpg" />
+
+  const[review, setReview] = useState([]);
+
+  useEffect(() =>{
+    fetch('review.json')
+    .then(res => res.json())
+    .then(data => setReview(data))
+  })
+
+
+  return (
+    <div className='mx-10 mt-10'>
+     <h1 className=' text-3xl text-center font-bold'><span className='section-header'>Toy Shop</span> Review</h1>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+
+        {
+          review.map((reviews , index) => <SwiperSlide key={`${review._id}_${index}`} reviews={reviews}>
+            <div className=''>
+                <div className='flex items-center mx-auto mt-10 mb-5'>
+                      <img className=' rounded-full w-28 mx-auto review-img' src={reviews.authorImage} alt="" />
+                </div>
+                  
+                  <div className=''>
+                      <h2><BsFillChatRightQuoteFill></BsFillChatRightQuoteFill> {reviews.description}</h2>
+                      
+                      <div className='flex justify-between  mt-3'>
+                        <h2 className=' text-lg font-semibold'>{reviews.name}</h2>
+                        <Rating 
+                        style={{maxWidth :100}}
+                        value={reviews.rating}
+                        readOnly
+                        
+                        ></Rating>
+                      </div> 
+                  </div>
+                
             </div>
-            </div>
-            <div>
-                <p>We have 9 kids and the last 2 are twins. We got a pair of these for the twins so they could help out their brothers shoveling our heavy northern Wisconsin snow. They love it!!!The shovels are well made and sturdy. Don’t bend picking up heavy snow. Didn’t break when whacking various things like trees or brothers!</p>
-            </div>
-          </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" className="btn btn-circle">❮</a> 
-            <a href="#slide2" className="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide2" className="carousel-item relative w-full">
-        <div className="flex gap-5 w-1/2 mx-auto">
-            <div className="avatar">
-            <div className="w-24 rounded-full">
-                <img src="https://i.ibb.co/7jmXg2C/r3.jpg" />
-            </div>
-            </div>
-            <div>
-                <p>This is an excellent shovel. It’s a great size and weight for our 4 year old, and honestly we borrow it for certain shoveling jobs because it works better than many adult shovels. It’s very sturdy. What a pleasure to have found something that isn’t made dumb/ineffective because it’s made for kids. Can’t recommend it enough!</p>
-            </div>
-          </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">❮</a> 
-            <a href="#slide3" className="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide3" className="carousel-item relative w-full">
-        <div className="flex gap-5 w-1/2 mx-auto">
-            <div className="avatar">
-            <div className="w-24 rounded-full">
-                <img src="https://i.ibb.co/54sfQNr/r2.jpg" />
-            </div>
-            </div>
-            <div>
-                <p>We have 9 kids and the last 2 are twins. We got a pair of these for the twins so they could help out their brothers shoveling our heavy northern Wisconsin snow. They love it!!!The shovels are well made and sturdy. Don’t bend picking up heavy snow. Didn’t break when whacking various things like trees or brothers!</p>
-            </div>
-          </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">❮</a> 
-            <a href="#slide4" className="btn btn-circle">❯</a>
-          </div>
-        </div> 
-        <div id="slide4" className="carousel-item relative w-full">
-        <div className="flex gap-5 w-1/2 mx-auto">
-            <div className="avatar">
-            <div className="w-24 rounded-full">
-                <img src="https://i.ibb.co/BqRrddx/r1.webp" />
-            </div>
-            </div>
-            <div>
-                <p>We purchased 2 of these shovels and they have been great. Light enough for our three year old and sturdy enough for our seven year old. Great product for a great price. I see these shovels ladting for years.</p>
-            </div>
-          </div>
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">❮</a> 
-            <a href="#slide1" className="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div>
-    );
+                
+
+          </SwiperSlide>)
+        } 
+       
+      </Swiper>
+    </div>
+  );
 };
 
 export default Review;

@@ -1,103 +1,304 @@
 [
-    {
-      "picture": "https://i.ibb.co/Ry0dCz9/s1.jpg",
-      "name": "Spider Man",
-      "price": 10.99,
-      "rating": 4.5,
-      "status": "spider-man",
-      "seller_name": "Crafty Commerce",
-      "seller_email": "crafty@gmail.com",
-      "available_quantity": "5",
-      "detail_description":"Imagine swinging into the newest Spider-Man Adventure with Spider-Man figures, vehicles, and role-play items inspired by the Marvel Comics. With this classic inspired line of toys, kids can imagine the web-slinging, wall-crawling action as Spider-Man faces new challenges and new villains. Products each sold separately. Subject to availability. imagine the web-slinging hero swinging through the city with this Spider-Man figure from the Titan hero series! When kids connect the Titan hero blast gear launcher (not included; sold separately with Titan hero blast gear figures) to this figure's arm port, they can activate sound effects and launch projectiles! titan hero blast gear launcher sold with Titan hero blast gear figures. Each sold separately. Subject to availability." 
-    },
-    {
-      "picture": "https://i.ibb.co/N6NBNSj/s2.jpg",
-      "name": "Spider Man",
-      "price": 19.99,
-      "rating": 3.8,
-      "status" : "spider-man",
-      "seller_name": "Virtual Victory",
-      "seller_email": "virtual@gmail.com",
-      "available_quantity": "20",
-      "detail_description":"High above the ground, swinging through the streets, Spider-Man stops criminals that seem impossible to beat!  This collectible 3.75-inch-scale Marvel Legends figure is detailed to look like the Spider-Man character from Marvel Comics, featuring premium detail and multiple points of articulation.  With over 80 years of entertainment history, Marvel has become a cornerstone of fan collections around the world. With the Marvel Legends Series, fan favorite Marvel Comic Universe and Marvel Cinematic Universe characters are designed with premium detail and articulation for posing and display in collections. From figures to vehicles to premium roleplay items, the Marvel Legends Series offers elite character-inspired products for Marvel fans and collectors. Additional figures each sold separately. (Subject to availability.) Copyright 2022 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
-    },
-    {
-      "picture": "https://i.ibb.co/nBHpWyF/s3.webp",
-      "name": "Spider Man",
-      "price": 19.99,
-      "rating": 3.8,
-      "status" : "spider-man",
-      "seller_name": "InterwebDeals",
-      "seller_email": "interwebdeals@gmail.com",
-      "available_quantity": "14",
-      "detail_description":"Look out: here comes Marvel’s Spider-Man Muscle Chest Box Set. This full-sleeved muscle chest costume top is based on Peter Parker's original spider suit and will transform your child into the iconic web head. The suit’s chest, shoulders, and torso is stuffed with polyfill and features a printed design of Spidey’s classic emblem. It also includes a fabric Spider-Man mask with white mesh inside the eyes. Collect Marvel’s Spider-Man Muscle Chest Box Set and watch your child fuse great power with great responsibility. Officially licensed Marvel product from Jazwares."
-    },
-    {
-      "picture": "https://i.ibb.co/xgHwDZG/i3.jpg",
-      "name": "Iron Man",
-      "price": 7.99,
-      "rating": 4.2,
-      "status" : "iron-man",
-      "seller_name": "Value Store",
-      "seller_email": "value@gmail.com",
-      "available_quantity": "10",
-      "detail_description":"Nothing on Earth is more powerful than the incredible Iron Man. His supersonic suit blasts through the sky armed with incredible energy weapons and super strength. No matter where in the world the bad guys are hiding, Iron Man is ready to zoom in and blast 'em. Super-size your superhero adventures with the armored Avenger. This Titan Hero Series Iron Man figure has a supersonic suit and he's ready to open up a repulsor-blasting attack on the foes of justice everywhere. With him on your side, there's no telling where your Avengers adventures will take you. Hasbro and all related terms are trademarks of Hasbro."
+  {
+    "picture": "https://i.ibb.co/q12SvW6/dc3.jpg",
+    "name": "Batman Action Figure",
+    "role" : "dc",
+    "price": 25.49,
+    "rating": 3.8,
+    "status": "Out of Stock",
+    "seller_name": "Spin Master",
+    "seller_email": "spinmaster@example.com",
+    "available_quantity": 0,
+    "detail_description": "Create your own epic Super Hero and Super-Villain adventures with the Batman 12-inch Action Figures! Each action figure features 11 points of articulation, detailed sculpt, and comic styling that brings your favorite Batman characters to life! Batman and DC fans of all ages will love these Batman Action Figures to engage their imagination and create their own epic Super Hero battles! With a range of figures to collect, expand your Batman action figure collection with Batman, Nightwing, The Joker, Red Hood and more (each sold separately). Protect Gotham City with the Batman 12-inch Action Figures!"
+  },
+  {
+    "picture": "https://i.ibb.co/xXrCd2X/dc4.jpg",
+    "name": "The Joker Action Figure",
+    "role" : "dc",
+    "price": 32.00,
+    "rating": 4.8,
+    "status": "In Stock",
+    "seller_name": "Spin Master",
+    "seller_email": "spinmaster@example.com",
+    "available_quantity": 30,
+    "detail_description": "Create your own epic Super Hero and Super-Villain adventures with the Batman 12-inch Action Figures! Each action figure features 11 points of articulation, detailed sculpt, and comic styling that brings your favorite Batman characters to life! Batman and DC fans of all ages will love these Batman Action Figures to engage their imagination and create their own epic Super Hero battles! With a range of figures to collect, expand your Batman action figure collection with Batman, Nightwing, The Joker, Red Hood and more (each sold separately). "
+  },
+  {
+    "picture": "https://i.ibb.co/dLqm31K/dc7.jpg",
+    "name": "Medicom The Dark Knight Joker",
+    "role" : "dc",
+    "price": 49.95,
+    "rating": 4.9,
+    "status": "In Stock",
+    "seller_name": "Fisher-Price",
+    "seller_email": "fisherprice@example.com",
+    "available_quantity": 15,
+    "detail_description": "From Medicom toy. Heath Ledger justly earned an Academy award for his chilling portrayal of the Joker in Christopher Nolan's acclaimed film, the dark Knight. Medicom revisits Ledger's Joker with their new the dark Knight miracle action figure, one of the most detailed figures on the market! standing just over 6 tall, this chilling reproduction of the sinister master criminal from the dark Knight includes alternate heads and hands, plus a full arsenal of weapons to recreate many of his signature moments from the film! this version features all new 3D printed head sculpts and new accessories!."
+  },
+  {
+    "picture": "https://i.ibb.co/vh8jKr8/dc6.jpg",
+    "name": "Titan Hero Series Carnage Venom",
+    "role" : "dc",
+    "price": 18.75,
+    "rating": 3.5,
+    "status": "In Stock",
+    "seller_name": "Hasbro",
+    "seller_email": "hasbro@example.com",
+    "available_quantity": 65,
+    "detail_description": "An alien symbiote craving chaos and destruction, Carnage is the ultimate enemy of justice. Imagine Carnage wreaking havoc with this Titan Hero Series Carnage figure! This figure measures in at a towering 12-inch scale, so kids can imagine giant-sized battles of good versus evil! Figure features ball joint articulation for poseability at shoulders and hips. Kids can collect other Titan Hero Series figures for more battling action! Imagine the Carnage symbiote causing chaos 12-inch scale action figure with ball joint articulation Classic-inspired details and figure design Create giant action figure battles Ages 4 and up WARNING: CHOKING HAZARD - Small parts may be generated. Not for children under 3 years."
+  },
+  {
+    "picture": "https://i.ibb.co/WKngNBM/dc1.jpg",
+    "name": "DC Multiverse Batman (Dark Knights of Steel)",
+    "role" : "dc",
+    "price": 19.99,
+    "rating": 4.2,
+    "status": "In Stock",
+    "seller_name": "McFarlane Toys",
+    "seller_email": "mcfarlanetoys@example.com",
+    "available_quantity": 50,
+    "detail_description": "As a child, BRUCE WAYNE watched as his parents were brutally killed in GOTHAM CITY'S CRIME ALLEY. Traumatized by their deaths, he devoted his life to becoming the worlds greatest weapon against crime – the BATMAN™! To become the ultimate vigilante, the DARK KNIGHT™ disciplined his mind and body to reach the pinnacle of mental and physical superiority in his relentless pursuit of Justice!"
+  },
+  {
+    "picture": "https://i.ibb.co/tPNCWDB/dc2.jpg",
+    "name": "Kid Flash Gold Label",
+    "role" : "dc",
+    "price": 33.9,
+    "rating": 5,
+    "status": "In Stock",
+    "seller_name": "McFarlane Toys Store",
+    "seller_email": "mcfarlanetoysstoreC@example.com",
+    "available_quantity": 75,
+    "detail_description": "The latest in a long line of speedsters, Wallace West does not take the mantle of Kid Flash lightly, even when it makes him question everything about himself. Struck by Speed Force lightning thanks to some truly mind-bending issues with the timeline, Wallace was given his powers and put on the radar of Barry Allen, who took him under his wingor, at least, he tried to. If there's one thing Wallace learned very quickly, it's that being a speedster isn't something you can just be taught overnight, even by the Fastest Man Alive. Incredibly detailed 7 scale figure based off the DC Multiverse."
+  },
+  {
+    "picture": "https://i.ibb.co/fSmxycg/dc5.jpg",
+    "name": "DC Heroes Superman",
+    "role" : "dc",
+    "price": 9.99,
+    "rating": 3.2,
+    "status": "In Stock",
+    "seller_name": "McFarlane Toys",
+    "seller_email": "mcfarlanetoys@example.com",
+    "available_quantity": 120,
+    "detail_description": "Create your own epic adventures with the DC Comics 4-Inch Action Figures! Join the MAN OF STEEL, SUPERMAN, on an exciting battle! Will you find a Metropolis Mayhem, Alien Attack, Central City Clash or Coastline Crisis adventure? Open the box to discover your adventure on a collector card and three mystery accessories hidden in compartments! Find armor, gauntlets, shields and more. Reveal accessories (including rare and super rare) that match your theme in material finishes like neon, steel, crystal and metallic."
+  },
+  {
+    "_id": "64e7b45c9e1a9113392729f8",
+    "picture": "https://i.ibb.co/34GBWW1/dc8.jpg",
+    "name": "Mongul Megafig",
+    "role": "dc",
+    "price": 27.99,
+    "rating": 4.6,
+    "status": "In Stock",
+    "seller_name": "McFarlane Toys",
+    "seller_email": "mcfarlanetoys@example.com",
+    "available_quantity": 90,
+    "detail_description": "Mongul is the brutal ruler of the planet-sized weapon of mass destruction called Warworld. Using Warworld to conquer planets across the cosmos, the tyrant enslaves the inhabitants and forces the strongest among them to serve in his horde army or suffer an uncertain fate in gladiator-style games for his amusement. Monguls immense size, rock-like body, and rapid regeneration make him nearly invincible. And his super-strength, speed, and agility make him almost unstoppable!"
+  },
 
-    },
-    {
-      "picture": "https://i.ibb.co/NtQKgL8/i4.jpg",
-      "name": "Iron Man",
-      "price": 14.99,
-      "rating": 4.7,
-      "status" : "iron-man",
-      "seller_name": "Retail Round Up",
-      "seller_email": "retail@gmail.com",
-      "available_quantity": "15",
-      "detail_description":"Tony Stark suits up a high-tech suit to protect the world as Iron Man. Imagine leaping into adventure with Avengers figures, vehicles, and roleplay items inspired by the Marvel comics. With this classic inspired line of toys, kids can imagine all the Avengers action with their favorite heroes including Hulk, Black Panther, Captain America and Captain Marvel. Products each sold separately. Subject to availability. Kids can imagine the heroic Avengers leaping into battle with this Avengers figure from the Titan Hero Series! When kids connect the Titan Hero Blast Gear launcher to this figure’s back port, they can launch projectiles! Titan Hero Blast Gear launcher sold with Titan Hero Blast Gear figures. Each sold separately. Subject to availability. Copyright 2019 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
-    },
-    {
-      "picture": "https://i.ibb.co/PMckdGT/i5.jpg",
-      "name": "Iron Man",
-      "price": 14.99,
-      "rating": 4.7,
-      "status" : "iron-man",
-      "seller_name": "The Further",
-      "seller_email": "further@gmail.com",
-      "available_quantity": "30",
-      "detail_description":"When he’s not driving flashy cars and attending VIP parties, billionaire philanthropist Tony Stark is helping the Avengers save the world as Iron Man! There’s more to being a super hero than capes and fancy suits. Being a super hero is about defending justice and knowing when it’s time to fight as a team! Kids can imagine powering up for action alongside their favorite super heroes, like Iron Man, Captain America, Spider-Man, Black Widow, Hulk, Black Panther, Thor, and more, with Avengers figures and roleplay! Avengers, Assemble! With the NERF Power Moves Marvel Avengers Iron Man Repulsor Blast roleplay toy, kids ages 5 and up can imagine gearing up like Tony Stark to become super hero Iron Man! Boys and girls will love pretending they are Iron Man, pulling back the primer handle on the Repulsor Blast gauntlet toy and mimicking Iron Man’s signature Repulsor Blast move to launch a NERF dart! Copyright 2022 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
-    },
-    {
-      "picture": "https://i.ibb.co/Tc65Q3B/h1.jpg",
-      "name": "Hulk",
-      "price": 9.99,
-      "rating": 3.5,
-      "status" : "hulk",
-      "seller_name": "The Gigantic",
-      "seller_email": "gigantic@gmail.com",
-      "available_quantity": "25",
-      "detail_description":"It’s Spidey time! This Marvel Spidey and His Amazing Friends toy comes with a Hulk action figure and a Smash Truck vehicle for action-packed play. The 4-inch figure can really sit in the car, so preschoolers can imagine zooming to the rescue with the Spidey Team. With this preschool Marvel figure and vehicle set, fun is just a ride away! This Hulk toy set makes a great holiday or birthday gift for kids ages 3 and up who love Super Hero adventures! Look for more Spidey and His Amazing Friends vehicle and figure sets, including Spidey, Miles Morales: Spider-Man, Black Panther, and Ghost-Spider. (Each sold separately. Subject to availability.) Copyright MARVEL. All trademarks and registered trademarks are the property of their respective owners. Hasbro and all related terms are trademarks of Hasbro."
-    },
-    {
-        "picture": "https://i.ibb.co/3Ng3V58/h2.jpg",
-        "name": "Hulk",
-        "price": 8.99,
-        "rating": 6.5,
-        "status" : "hulk",
-        "seller_name": "The Gigantic",
-        "seller_email": "gigantic@gmail.com",
-        "available_quantity": "25",
-        "detail_description":"It’s Spidey time! This Marvel Spidey and His Amazing Friends toy comes with a Hulk action figure and a Smash Truck vehicle for action-packed play. The 4-inch figure can really sit in the car, so preschoolers can imagine zooming to the rescue with the Spidey Team. With this preschool Marvel figure and vehicle set, fun is just a ride away! This Hulk toy set makes a great holiday or birthday gift for kids ages 3 and up who love Super Hero adventures! Look for more Spidey and His Amazing Friends vehicle and figure sets, including Spidey, Miles Morales: Spider-Man, Black Panther, and Ghost-Spider. (Each sold separately. Subject to availability.) Copyright MARVEL. All trademarks and registered trademarks are the property of their respective owners. Hasbro and all related terms are trademarks of Hasbro."
-    },
-    {
-      "picture": "https://i.ibb.co/Hgn9VMT/h3.jpg",
-      "name": "Hulk",
-      "price": 8.99,
-      "rating": 6.5,
-      "status" : "hulk",
-      "seller_name": "Better Buying",
-      "seller_email": "Better Buying@gmail.com",
-      "available_quantity": "25",
-      "detail_description":"It’s Spidey time! This Marvel Spidey and His Amazing Friends toy comes with a Hulk action figure and a Smash Truck vehicle for action-packed play. The 4-inch figure can really sit in the car, so preschoolers can imagine zooming to the rescue with the Spidey Team. With this preschool Marvel figure and vehicle set, fun is just a ride away! This Hulk toy set makes a great holiday or birthday gift for kids ages 3 and up who love Super Hero adventures! Look for more Spidey and His Amazing Friends vehicle and figure sets, including Spidey, Miles Morales: Spider-Man, Black Panther, and Ghost-Spider. (Each sold separately. Subject to availability.) Copyright MARVEL. All trademarks and registered trademarks are the property of their respective owners. Hasbro and all related terms are trademarks of Hasbro."
-  }
-  ]
+
+  {
+    "picture": "https://i.ibb.co/BwxcYP4/m2.jpg",
+    "name": "Marvel Legends Series: Ronan The Accuser",
+    "role" : "marvel",
+    "price": 25.49,
+    "rating": 3.8,
+    "status": "Out of Stock",
+    "seller_name": "Hasbro",
+    "seller_email": "hasbro@example.com",
+    "available_quantity": 0,
+    "detail_description": "As Supreme Public Accuser, Ronan enforces Kree justice with his cosmi-rod, the Universal Weapon, which often brings him into conflict with the space-faring races of the Marvel Universe. Bring the excitement and wonder of the Marvel Universe to your collection with Guardians of the Galaxy action figures from the Hasbro Marvel Legends Series! (Additional products each sold separately. Subject to availability.)  This collectible 6-inch-scale Marvel Legends Guardians of the Galaxy action figure is detailed to look like the classic Ronan the Accuser character from Fantastic Four, Avengers and other classic Marvel comics, featuring premium detail and multiple points of articulation. It comes with 1 accessory, the cosmi-rod wielded by Supreme Public Accuser, the Universal Weapon."
+  },
+  {
+    "picture": "https://i.ibb.co/0GNQ8M5/m4.jpg",
+    "name": "Marvel Legends Series Drax",
+    "role" : "marvel",
+    "price": 32.00,
+    "rating": 4.8,
+    "status": "In Stock",
+    "seller_name": "Hasbro",
+    "seller_email": "hasbro@example.com",
+    "available_quantity": 30,
+    "detail_description": "Drax finally dons a shirt and becomes a more active member of the Guardians by helping set up their new headquarters--but he still has trouble thinking before he acts. This collectible 6-inch-scale Marvel Legends figure is detailed to look like the Drax character from Marvel Studios’ Guardians of the Galaxy Vol. 3, featuring premium detail, multiple points of articulation, and 3 movie-inspired accessories, including two knife accessories.  With over 80 years of entertainment history, Marvel has become a cornerstone of fan collections around the world. With the Marvel Legends Series, fan favorite Marvel Comic Universe and Marvel Cinematic Universe characters are designed with premium detail and articulation for posing and display in collections. From figures to vehicles to premium roleplay items, the Marvel Legends Series offers elite character-inspired products for Marvel fans and collectors. Additional figures each sold separately. (Subject to availability.) Copyright 2022 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
+  },
+  {
+    "picture": "https://i.ibb.co/LhhS9qh/m3.jpg",
+    "name": "Marvel Hasbro Legends Series Bishop",
+    "role" : "marvel",
+    "price": 33.9,
+    "rating": 5,
+    "status": "In Stock",
+    "seller_name": "Hasbro",
+    "seller_email": "hasbro@example.com",
+    "available_quantity": 75,
+    "detail_description": "With over 80 years of comic book history, Marvel has become a cornerstone of fan collections around the world. From figures to vehicles to roleplay toys, Marvel toys offer character-inspired products for every type of fan, from adult collectors to kids. Imagine adventures with characters like Iron Man, Captain America, Spider-Man, Black Panther, and more! With Marvel figures and roleplay toys, fans can re-enact battles with their favorite heroes and play their part in saving the galaxy! Additional figures and roleplay toys each sold separately. Subject to availability. Copyright 2019 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
+  },
+  {
+    "picture": "https://i.ibb.co/qswrZ0L/m1.jpg",
+    "name": "Marvel Legends Series Star-Lord, Guardians of The Galaxy ",
+    "role" : "marvel",
+    "price": 19.99,
+    "rating": 4.2,
+    "status": "In Stock",
+    "seller_name": "Hasbro",
+    "seller_email": "hasbro@example.com",
+    "available_quantity": 50,
+    "detail_description": "Peter Quill must do whatever it takes to save a friend whose life is in danger. This collectible 6-inch-scale Marvel Legends figure is detailed to look like the Star-Lord character from Marvel Studios’ Guardians of the Galaxy Vol. 3, featuring premium detail, multiple points of articulation, and 2 movie-inspired blaster accessories.  With over 80 years of entertainment history, Marvel has become a cornerstone of fan collections around the world. With the Marvel Legends Series, fan favorite Marvel Comic Universe and Marvel Cinematic Universe characters are designed with premium detail and articulation for posing and display in collections. From figures to vehicles to premium roleplay items, the Marvel Legends Series offers elite character-inspired products for Marvel fans and collectors. Additional figures each sold separately. (Subject to availability.)"
+  },
+  {
+    "picture": "https://i.ibb.co/r6mRHfv/m5.jpg",
+    "name": "Spider-Man Marvel Legends Series Across The Spider-Verse",
+    "role" : "marvel",
+    "price": 10,
+    "rating": 3.2,
+    "status": "In Stock",
+    "seller_name": "McFarlane Toys",
+    "seller_email": "mcfarlanetoys@example.com",
+    "available_quantity": 120,
+    "detail_description": "Spider-Gwen has grown up a lot over the past two years, keeping busy between band practice and protecting her city. With over 80 years of entertainment history, Marvel has become a cornerstone of fan collections around the world. With the Marvel Legends Series, fan favorite Marvel Comic Universe and Marvel Cinematic Universe characters are designed with premium detail and articulation for posing and display in collections. From figures to vehicles to premium roleplay items, the Marvel Legends Series offers elite character-inspired product for Marvel fans and collectors. Additional figures each sold separately. "
+  },
+  {
+    "picture": "https://i.ibb.co/F7V9r6Z/m7.jpg",
+    "name": "Marvel Legends Series Thor Comics Gorr Action",
+    "role" : "marvel",
+    "price": 18.75,
+    "rating": 3.5,
+    "status": "In Stock",
+    "seller_name": "Hasbro",
+    "seller_email": "hasbro@example.com",
+    "available_quantity": 65,
+    "detail_description": "Wielding the dreaded Necrosword, the being known only as Gorr sets out on a path of vengeance across time and space, and only Thor can stop him! With over 80 years of entertainment history, Marvel has become a cornerstone of fan collections around the world. With the Marvel Legends Series, fan favorite Marvel Comic Universe and Marvel Cinematic Universe characters are designed with premium detail and articulation for posing and display in collections. From figures to vehicles to premium roleplay items, the Marvel Legends Series offers elite character-inspired product for Marvel fans and collectors. Additional figures each sold separately. Subject to availability. Copyright 2022 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
+  },
+  {
+    "picture": "https://i.ibb.co/gP22Xs5/m8.jpg",
+    "name": "Marvel Hasbro Legends Series: Ultimate Captain America Ultimates",
+    "role" : "marvel",
+    "price": 27.99,
+    "rating": 4.6,
+    "status": "In Stock",
+    "seller_name": "Hasbro",
+    "seller_email": "hasbro@example.com",
+    "available_quantity": 90,
+    "detail_description": "The Captain America of the Ultimate Universe has served as the Allies’ super-soldier in World War II, the leader of the first Ultimates team Bring the excitement and wonder of the Marvel Universe to your collection with action figures from the Hasbro Marvel Legends Series! (Additional products each sold separately. Subject to availability.)  This collectible 6-inch-scale Marvel Legends Classic Comic figure is detailed to look like the Ultimate Captain America character from Ultimates (that letter on his head doesn’t stand for France) featuring premium detail and multiple points of articulation. It comes with 3 accessories, including alternate hands and his iconic shield; plus a Build-A-Figure piece Copyright 2022 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
+  },
+  {
+    "picture": "https://i.ibb.co/K6bM5bJ/m6.jpg",
+    "name": "Titan Hero Series Ultimate Spiderman",
+    "role" : "marvel",
+    "price": 50,
+    "rating": 4.9,
+    "status": "In Stock",
+    "seller_name": "HASBRO SERIES",
+    "seller_email": "hasbroseries@example.com",
+    "available_quantity": 15,
+    "detail_description": "What's more powerful than a web-slinging superhero? A web-slinging superhero with deadly, high-powered armor! This awesome Armored SpiderMan figure looks like SpiderMan but his specialized armor has weapons that make him even more powerful! With his high-tech spider armor, your Armored SpiderMan figure will be twice as dangerous to the bad guys! 12 inch tall Armored SpiderMan figure."
+  },
+
+
+
+
+  {
+    "picture": "https://i.ibb.co/Fbjp4L9/a2.jpg",
+    "name": "Marvel AMN Titan Hero WASP",
+    "role" : "avengers",
+    "price": 25.49,
+    "rating": 3.8,
+    "status": "Out of Stock",
+    "seller_name": "Hasbro",
+    "seller_email": "hasbro@example.com",
+    "available_quantity": 0,
+    "detail_description": "With over 80 years of comic book history, Marvel has become a cornerstone of fan collections around the world. From figures to vehicles to roleplay toys, Marvel toys offer character-inspired products for every type of fan, from adult collectors to kids. Imagine adventures with characters like Iron Man, Captain America, Spider-Man, Black Panther, and more! With Marvel figures and roleplay toys, fans can re-enact battles with their favorite heroes and play their part in saving the galaxy! Additional figures and roleplay toys each sold separately. Subject to availability. Copyright 2019 MARVEL. Hasbro and all related terms are trademarks of Hasbro."
+  },
   
+  {
+    "picture": "https://i.ibb.co/qdxKFrK/a8.jpg",
+    "name": "Across The Spider-Verse Titan Hero Series Spider-Man",
+    "role" : "avengers",
+    "price": 27.99,
+    "rating": 4.6,
+    "status": "In Stock",
+    "seller_name": "Hasbro",
+    "seller_email": "hasbro@example.com",
+    "available_quantity": 90,
+    "detail_description": "Miguel O’hara tried to manipulate the genetics of former Spider-People and accidentally turned himself into the best Spider-Man in the multi-verse! Unleash the power of the Spider-Verse with the Marvel Titan Hero Series Spider-Man 2099 action figure! Kids ages 4 and up can imagine web-slinging action and adventure with this 12-inch-scale deluxe action figure, inspired by the Spider-Man: Across the Spider-Verse . Featuring movie-inspired design and detail, as well as multiple points of articulation for poseable fun, boys and girls will love imagining superpowered battles with this large-scale Spider-Man 2099 toy! Copyright 2022 MARVEL. Copyright 2022 SPA & CPII. Hasbro and all related terms are trademarks of Hasbro."
+  },
+  {
+    "picture": "https://i.ibb.co/bWTRsMs/a7.jpg",
+    "name": "Hot Toys Marvel Avengers Endgame Thor",
+    "role" : "avengers",
+    "price": 18.75,
+    "rating": 3.5,
+    "status": "In Stock",
+    "seller_name": "Hot Toys",
+    "seller_email": "hottoys@example.com",
+    "available_quantity": 65,
+    "detail_description": "Infinity War, the God of Thunder’s priorities shift towards playing video games with his best pals while attempting to drink every bottle of beer in the city! His unexpected descent into depression has turned him into an alcoholic, thus giving him a massive physical transformation. His appearance has changed but his heroism remains. Thor is still and always be worthy to wield the mighty hammer, even if he might not necessarily always feel that he is. Masterfully crafted based on the appearance of Chris Hemsworth’s appearance in the movie. He features a newly developed head sculpt with a pair of different coloured eyes and specially applied a luminous reflective effect that accentuates Thor using his thunder power. A newly developed specialized body that depicts his body with physical changes with expertly tailored body armour with LED light-up function and matching lightning effect accessories, a signature red-coloured cape, and body armour."
+  },
+  
+  {
+    "picture": "https://i.ibb.co/KKczdgy/a4.jpg",
+    "name": "Hot Toys Marvel Avengers Infinity War Captain America",
+    "role" : "avengers",
+    "price": 233,
+    "rating": 4.8,
+    "status": "In Stock",
+    "seller_name": "Hot Toys",
+    "seller_email": "hottoys@example.com",
+    "available_quantity": 30,
+    "detail_description": "Captain America has remained under the radar while continuing to do what he believes is right � saving the world one clandestine mission at a time, but with a great cosmic threat approaching, Cap is joining forces with Earth�s mightiest superheroes again to save the world.Sideshow and Hot Toys are very excited to present the latest Sixth scale collectible figure of Captain America with an all-new look from Avengers: Infinity War! With stunning craftsmanship, the highly movie-accurate sixth scale Captain America is finely created based on the appearance of Chris Evans as Captain America/Steve Rogers with a striking likeness. It features a newly developed head sculpt with detailed hair and beard, a body which portrays the muscularly-toned Captain America, and a striking newly tailored Captain America suit with battle damaged parts on chest revealing the scale patterns underneath."
+  },
+  
+  {
+    "picture": "https://i.ibb.co/98CwBrN/a1.jpg",
+    "name": "Titan Hero Series Iron Patriot War Machine",
+    "role" : "avengers",
+    "price": 19.99,
+    "rating": 4.2,
+    "status": "In Stock",
+    "seller_name": "The Avengers",
+    "seller_email": "theavengers@example.com",
+    "available_quantity": 50,
+    "detail_description": "War Machine jets through the skies, ready to blast the bad guys! With the 12-inch figures from the Titan Hero Series, kids can imagine their favorite Super Heroes teaming up in a giant-sized battle to fight for justice!"
+  },
+  
+  {
+    "picture": "https://i.ibb.co/KrBQjhr/a3.jpg",
+    "name": "TAMASHII NATIONS - Avengers: Endgame - Iron Man",
+    "role" : "avengers",
+    "price": 98.00,
+    "rating": 5,
+    "status": "In Stock",
+    "seller_name": "Bandai Spirits",
+    "seller_email": "bandaispirits@example.com",
+    "available_quantity": 75,
+    "detail_description": "Five years have passed since the release of Avengers: Infinity War. Given that Avengers: Endgame was set in 2023, we're excited to release a new recolor of Iron Man Mark 85, designed to even better capture his on-screen appearance and with new bonus parts! Combine it with the new release of Thanos (sold separately) to re-create the epic climax of Avengers: Infinity War! Stands approximately 6.3 tall. Set Contents Main body, Optional head, Four pairs of optional hands, Repulsor effect set, Nano lightning refocuser, Lightning refocuser effect part set, Claw blasters (L/R), Finger snap part set."
+  },
+  
+  
+  {
+    "picture": "https://i.ibb.co/RNH80Vx/a5.jpg",
+    "name": "Avengers Marvel Titan Hero Series Blast Gear Captain America",
+    "role" : "avengers",
+    "price": 10,
+    "rating": 3.2,
+    "status": "In Stock",
+    "seller_name": "McFarlane Toys",
+    "seller_email": "mcfarlanetoys@example.com",
+    "available_quantity": 120,
+    "detail_description": "Steve Rogers suits up as America's First Super Soldier, Captain America!Imagine leaping into adventure with Avengers figures, vehicles, and roleplay items inspired by the Marvel Universe. With this classic inspired line of toys, kids can imagine all the action of the Avengers Universe with their favorite heroes including Captain America, Iron Man, and Black Panther. Products each sold separately. Subject to availability.Kids can imagine the heroic Avengers leaping into battle with this Avengers figure from the Titan Hero Series! When kids connect the Titan Hero Blast Gear launcher to this figure’s back port, they can launch projectiles!Titan Hero Blast Gear launcher sold with Titan Hero Blast Gear figures. Each sold separately. Subject to availability."
+  },
+  {
+    "picture": "https://i.ibb.co/n6nwph4/a6.jpg",
+    "name": "Avengers Marvel Titan Hero Series Blast Gear Iron Man",
+    "role" : "avengers",
+    "price": 50,
+    "rating": 4.9,
+    "status": "In Stock",
+    "seller_name": "HASBRO SERIES",
+    "seller_email": "hasbroseries@example.com",
+    "available_quantity": 15,
+    "detail_description": "Tony Stark suits up as the tech-powered Iron Man to battle his foes. Imagine leaping into adventure with Avengers figures and roleplay items inspired by the Marvel Universe. With this classic inspired line of toys, kids can imagine the heroic action as Hulk, Iron Man, Captain America and the rest of the team faces off against Thanos, the greatest threat the universe has ever known. Products each sold separately. Subject to availability. Imagine the brave billionaire Tony Stark flying into battle with this Iron Man figure from the Titan Hero Series! When kids connect the Titan Hero Blast Gear launcher (sold separately) to this figure’s arm port, they can launch projectiles! Titan Hero Blast Gear launcher sold with Titan Hero Blast Gear figures. Each sold separately. Subject to availability."
+  }
+
+]

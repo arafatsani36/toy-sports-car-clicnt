@@ -1,0 +1,267 @@
+/* react icon css */
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: inline-block;
+}
+.all-btn{
+    padding: 10px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+}
+.all-btn:hover{
+    
+    box-shadow: inset -20.5em 0 0 0 #C53678, inset 20.5em 0 0 0 #C53678;
+
+}
+
+/* dashboard active link style  */
+.drawer-side a.active{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+
+.header{
+    /* position: fixed;
+    z-index: 1000; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 12px;
+    background-color: rgb(239, 237, 237);
+   border-bottom: 1px solid black;
+
+}
+.title-span{
+    color:#C53678 ;
+    
+}
+.logo:hover{
+    color: #000000;
+}
+
+.nav-item{
+    color:#C53678;
+    transition: transform 0.2s;
+}
+.nav-item:hover{
+    color:#ed2d87;
+    transform: scale(1.2);
+}
+
+.swiper-button-prev {
+    display: none;
+}
+
+
+/* banner section start  */
+.banner{
+    background-image: url("./../assets/bgImg/bgBanner.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* banner section end  */
+
+/* card style start  */
+.card {
+     border-radius: none; 
+}
+
+
+.img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: .5s ease-in-out;
+}
+/* card style end  */
+
+.service{
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 20px 0px;
+}
+.service-box{
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.service-box:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.service-box service-img{
+    color:#C53678 ;
+}
+.service-content{
+    margin-left: 20px;
+}
+.service-box h2{
+    color:#C53678 ;
+    font-size: 20px;
+    font-weight: bold;
+}
+.service-box p{
+    color:#0e0e0e ;
+    font-size: 15px;
+}
+
+
+.react-tabs__tab{
+    color:#C53678;
+    font-size: 20px;
+    font-weight:500;
+}
+
+
+.shop-categoty{
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative;
+}
+.status{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:#000000;
+}
+.shop-categoty h2{
+    font-size: 20px;
+}
+.shop-categoty:hover{
+    transform: scale(1.1);
+}
+.shop-categoty-btn{
+    padding: 10px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.shop-categoty-btn:hover{
+   
+    background-color:#C53678;
+    color: #ffffff;
+    
+}
+.section-header{
+    color:#C53678;
+}
+
+.extra-banner{
+    background-image: url("./../assets/bgImg/extra-banner1.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+.extra-banner-content{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.extra-banner-header{
+    color:#C53678;
+}
+
+
+.review-img{
+    border: 1px solid #C53678;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.review-img:hover{
+    transform: scale(1.1);
+}
+.bookmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:#000000;
+}
+
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    margin:  0 auto;
+}
+
+.pagination button {
+    width: 40px;
+    height: 40px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: transparent;
+    color: #000000;
+    border:1px solid #000000;
+    
+}
+
+.pagination button.active {
+    font-weight: 900;
+    border-color: #101010;
+    background: #C53678;
+    color: #ffffff;
+}
+
+
+
+.feedback{
+    background-image: url("./../assets/bgImg/bgBanner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.8);     
+}
+
+.box{
+    display: block;
+    width: 100%;
+    
+}
+
+.feedback-btn{
+    padding: 10px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.feedback-btn:hover{
+    background-color:#C53678;
+    color: #ffffff;
+}
+.feedback-textarea{
+    border: 1px solid #e5dfdf;
+    border-radius: 6px;
+}
+
+/* login registration background banner  */
+
+
+.login-registration{
+    background-image: url("./../assets/bgImg/bgBanner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.8); 
+       
+}
+

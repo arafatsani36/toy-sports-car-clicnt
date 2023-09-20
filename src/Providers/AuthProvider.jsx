@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import app from "../firebase/firebase.config";
 
 export const AuthContext = createContext();
@@ -10,25 +10,41 @@ export const AuthContext = createContext();
 const AuthProvider = ({children}) => {
     const [user, setUser]  = useState(null);
     const [loder, setLoder] = useState(true);
-   
+
+
+    //createUser start
     const createUser = (email, password) => {
         setLoder(true);
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
+    //createUser end
+
+    //singIn start    
     const singIn = (email, password) => {
         setLoder(true);
         return signInWithEmailAndPassword(auth, email, password);
     }
-
+    //singIn end
+    
+    //logout start 
     const logOut = () => {
         return signOut(auth)
     }
-
+    //logout end
+    
+    //Social media start
     const googleSingIn = () => {
         return signInWithPopup(auth, Provider);
     }
+    //Social media end
 
+    const updateUserProfile = (name , photo) => {
+        return  updateProfile(auth.currentUser, {
+            displayName: name, photoURL: photo
+        })
+          
+    }
 
 
     useEffect(() => {
@@ -41,6 +57,8 @@ const AuthProvider = ({children}) => {
     }
     },[])
 
+
+
        
 
     const authInfo ={
@@ -50,6 +68,7 @@ const AuthProvider = ({children}) => {
         logOut,
         loder,
         googleSingIn,
+        updateUserProfile
     }
 
     return (

@@ -1,0 +1,53 @@
+[
+    {
+      "_id": "1",
+      "authorImage": "https://i.ibb.co/m4XHYnk/a1-1.jpg",
+      "name": "Addison Kobe",
+      "rating": "4",
+      "description": "We have 9 kids and the last 2 are twins. We got a pair of these for the twins so they could help out their brothers shoveling our heavy northern Wisconsin snow. They love it!!!The shovels are well made and sturdy."
+    },
+    {
+      "_id": "2",
+      "authorImage": "https://i.ibb.co/477G2VZ/a2-1.jpg",
+      "name": "Mathias Henry",
+      "rating": "5",
+      "description": "This is an excellent shovel. It’s a great size and weight for our 4 year old, and honestly we borrow it for certain shoveling jobs because it works better than many adult shovels. It’s very sturdy."
+    },
+    {
+      "_id": "3",
+      "authorImage": "https://i.ibb.co/frZyYht/a3-1.jpg",
+      "name": "Robert C. Hughes",
+      "rating": "4",
+      "description": "We have 9 kids and the last 2 are twins. We got a pair of these for the twins so they could help out their brothers shoveling our heavy northern Wisconsin snow. They love it!!!The shovels are well made and sturdy. "
+    },
+    {
+      "_id": "4",
+      "authorImage": "https://i.ibb.co/C6NwVJS/a4-1.jpg",
+      "name": "Mary R. Phillips",
+      "rating": "4.5",
+      "description": "We purchased 2 of these shovels and they have been great. Light enough for our three year old and sturdy enough for our seven year old. Great product for a great price. I see these shovels ladting for years."
+    },
+    {
+      "_id": "5",
+      "authorImage": "https://i.ibb.co/fn2wz40/a5-1.jpg",
+      "name": "Claudine R. Watkins",
+      "rating": "3",
+      "description": "I don’t usually get Marvel Legends, but this one is an exception. It looks like he jumped straight outta the movie, he has basically any accesories you’d really want from a spot fig, and he’s only 25 dollars."
+    }, 
+    {
+      "_id": "6",
+        "authorImage": "https://i.ibb.co/nn78Rc7/a6-1.jpg",
+        "name": "Chasity M. Free",
+        "rating": "3",
+        "description": "Greatest movie ever made and this figure is solid. With how much he talks with his hands I wish he came with more of them. A foam sheet cut into some circles really pulled him together for me."
+      },
+      {
+        "_id": "7",
+        "authorImage": "https://i.ibb.co/NCzmwKk/a7-1.jpg",
+        "name": "Kevin C. Roybal",
+        "rating": "3",
+        "description": "I enjoy how easy it is to move his joints, as opposed to some of my other Marvel Legends figures who have stiff joints."
+      }
+
+
+]

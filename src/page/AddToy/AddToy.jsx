@@ -44,7 +44,7 @@ const AddToy = () => {
             if(data.insertedId){
                 Swal.fire({
                     title: 'success!',
-                    text: 'Add Toys successfully',
+                    text: 'Waiting for admin Add your Toys ',
                     icon: 'success',
                     confirmButtonText: 'ok'
                   })
@@ -70,62 +70,62 @@ const AddToy = () => {
                    <label className="label">
                        <span className="label-text">Picture URL</span>
                    </label>
-                   <input type="text" name="picture" placeholder="Picture URL" className="input input-bordered" />
+                   <input required type="text" name="picture" placeholder="Picture URL" className="input input-bordered" />
                    </div>
 
                    <div className="form-control">
                    <label className="label">
                        <span className="label-text">Toy Name</span>
                    </label>
-                   <input type="text" name="toyname" placeholder="Name" className="input input-bordered" />
+                   <input required type="text" name="toyname" placeholder="Name" className="input input-bordered" />
                    </div>
 
                    <div className="form-control">
                    <label className="label">
                        <span className="label-text">seller name </span>
                    </label>
-                   <input type="text" name="seller" defaultValue={user?.name} placeholder="Seller name " className="input input-bordered" />
+                   <input required type="text" name="seller" defaultValue={user?.name} placeholder="Seller name " className="input input-bordered" />
                    </div>
 
                    <div className="form-control">
                    <label className="label">
                        <span className="label-text">Seller email</span>
                    </label>
-                   <input type="email" name="email" defaultValue={user?.email} placeholder="Seller Email " className="input input-bordered" />
+                   <input required type="email" name="email" defaultValue={user?.email} placeholder="Seller Email " className="input input-bordered" />
                    </div>
 
                    <div className="form-control">
                    <label className="label">
                        <span className="label-text">Sub category</span>
                    </label>
-                    <input type="text"  name="category" placeholder="Sub category" className="input input-bordered" />
+                    <input required type="text"  name="category" placeholder="Sub category" className="input input-bordered" />
                    </div>
 
                    <div className="form-control">
                    <label className="label">
                        <span className="label-text">Price</span>
                    </label>
-                   <input type="text" name="price" placeholder="Price" className="input input-bordered" />
+                   <input required type="text" name="price" placeholder="Price" className="input input-bordered" />
                    </div>
 
                    <div className="form-control">
                    <label className="label">
                        <span className="label-text">Rating</span>
                    </label>
-                   <input type="text" name="rating" placeholder="Rating" className="input input-bordered" />
+                   <input required type="text" name="rating" placeholder="Rating" className="input input-bordered" />
                    </div>
 
                    <div className="form-control">
                    <label className="label">
                        <span className="label-text">Available quantity</span>
                    </label>
-                   <input type="text" name="quantity" placeholder="Available Quantity" className="input input-bordered" />
+                   <input required type="text" name="quantity" placeholder="Available Quantity" className="input input-bordered" />
                    </div>
 
                    <label className="label">
                        <span className="label-text">Detail Description</span>
                    </label>
-                   <textarea className="textarea textarea-error" name="description" placeholder="Detail Description"></textarea>
+                   <textarea required className="textarea textarea-error" name="description" placeholder="Detail Description"></textarea>
 
                    <div className="form-control mt-6">
                    <input className="btn btn-primary" type="submit" value="Add Toy" />

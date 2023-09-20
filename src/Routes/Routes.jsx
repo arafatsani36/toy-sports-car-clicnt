@@ -12,6 +12,9 @@ import MyToys from "../page/MyToys/MyToys";
 import PrivetRoutes from "./PrivetRoutes";
 import UpdateToys from "../page/UpdateToys/UpdateToys";
 import SingleToyDetails from "../page/SingleToyDetails/SingleToyDetails";
+import Dashboard from "../Layouts/Dashboard";
+import UserToysAnalysis from "../page/Dashboard/AdminDashboard/UserToysAnalysis/UserToysAnalysis";
+import UserManagement from "../page/Dashboard/AdminDashboard/UserManagement/UserManagement";
 
 const router = createBrowserRouter([
     {
@@ -55,7 +58,6 @@ const router = createBrowserRouter([
           loader:({params}) => fetch(`https://toy-sports-car-server-nine.vercel.app/toys/${params.id}`)       
         },
         
-        
         {
           path: 'login',
           element: <Login></Login>
@@ -67,6 +69,22 @@ const router = createBrowserRouter([
         
       ]
     },
+
+    {
+      path:'dashboard',
+      element:<Dashboard></Dashboard>,
+      children:[
+        {
+          path:'usertoysanalysis',
+          element:<UserToysAnalysis></UserToysAnalysis>,
+        },
+        {
+          path:'usermanagement',
+          element:<UserManagement></UserManagement>,
+        },
+        
+      ]
+    }
 
   ]);
 

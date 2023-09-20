@@ -5,14 +5,12 @@ import Footer from "../page/Shared/Footer/Footer";
 const Main = () => {
     return (
         <div>
-            <Navber></Navber>
+             <Navber></Navber> 
 
             <div className=" min-h-[calc(100vh-200px)]">
                 <Outlet></Outlet>
             </div>
-
-            
-            <Footer></Footer>
+             <Footer></Footer> 
         </div>
     );
 };
