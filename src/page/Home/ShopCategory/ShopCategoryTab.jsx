@@ -11,7 +11,7 @@ const ShopCategoryTab = ({shop}) => {
     const {user} = useContext(AuthContext);
     return (
         <div className="mx-auto p-10">
-           <div className="shop-categoty mx-auto">
+           <div className="shop-categoty mx-auto" data-aos="zoom-in">
             <img className="mx-auto mb-4" src={picture} alt="" />
             <p className="status badge badge-outline">{status}</p> 
             <h2 className=" text-xl font-bold mb-4 red-violet">{name}</h2>

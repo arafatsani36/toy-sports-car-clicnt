@@ -6,6 +6,7 @@ import SocialLogin from "../../Component/SocialLogin/SocialLogin";
 import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
 
+
 const Registration = () => {
     const {createUser, updateUserProfile} = useContext(AuthContext);
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
@@ -14,49 +15,50 @@ const Registration = () => {
     const from = location.state?.from?.pathname || '/'
    
 
-    const onSubmit = data => {
-        console.log(data)
-        createUser(data.email, data.password)
-        .then(result => {
-                   const user = result.user;
-                   console.log(user)
-                    updateUserProfile(data.name, data.photourl)
-                     .then(() => {
-                        
-                        // database inserted
-                        const saveUser = {name : data.name, email: data.email} 
-                        fetch('http://localhost:5000/users', {
-                            method:'POST',
-                            headers:{
-                                'content-type' : 'application/json'
-                            },
-                            body: JSON.stringify(saveUser)
-                        })
-                        .then(res => res.json())
-                        .then(data => {
-                            if(data.insertedId){
-                                reset();
-                                Swal.fire({
-                                    position: 'top-center',
-                                    icon: 'success',
-                                    title: 'User Registration Successfully',
-                                    showConfirmButton: false,
-                                    timer: 1500
-                                   
-                                  })
-                                  navigate(from, {replace: true})
-                            }
-                        })
-                        
-                          
-                     })
-                     .catch(error => console.log(error))
-                 })
-                 .catch(error => {
-                     console.log(error)
-             })
-    };
+    const handleRegister = data => {
 
+        createUser(data.email, data.password)
+            .then(result => {
+
+                const loggedUser = result.user;
+                console.log(loggedUser);
+
+                updateUserProfile(data.name, data.photoURL)
+                
+
+                const saveUser = {
+                    name: data.name,
+                    email: data.email,
+                    photoURL: data.photoURL,
+                  };
+                  fetch('https://toy-sports-car-server-nine.vercel.app/users', {
+                    method: 'POST',
+                    headers: {
+                    'content-type': 'application/json',
+                    },
+                    body: JSON.stringify(saveUser),
+                })
+
+
+            .then((res) => res.json())
+            .then((data) => {
+              if (data.insertedId) {
+                reset();
+                // toast.success('Registration Successful');
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: 'Congratulations Toy Shop User created successfully.',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                navigate(from, {replace: true});
+              }
+            }); 
+   
+
+    });
+    }
     // const handleRegistration = event => {
     //     event.preventDefault();
     //     const form =event.target;
@@ -109,7 +111,7 @@ const Registration = () => {
 
 
 
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <form onSubmit={handleSubmit(handleRegister)}>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-base mt-2">Your Name</span>

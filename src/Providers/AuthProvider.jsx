@@ -35,14 +35,16 @@ const AuthProvider = ({children}) => {
     
     //Social media start
     const googleSingIn = () => {
+        setLoder(true);
         return signInWithPopup(auth, Provider);
     }
     //Social media end
 
     const updateUserProfile = (name , photo) => {
-        return  updateProfile(auth.currentUser, {
-            displayName: name, photoURL: photo
-        })
+        return updateProfile(auth.currentUser, {
+            displayName: name,
+            photoURL: photo,
+          });
           
     }
 
@@ -68,7 +70,8 @@ const AuthProvider = ({children}) => {
         logOut,
         loder,
         googleSingIn,
-        updateUserProfile
+        updateUserProfile,
+        
     }
 
     return (

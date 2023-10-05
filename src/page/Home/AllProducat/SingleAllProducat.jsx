@@ -1,26 +1,40 @@
-import { FaShareSquare } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
-import { AiOutlineHeart } from 'react-icons/ai';
+import { useEffect, useState } from "react";
+import { useLoaderData, useParams } from "react-router-dom";
 
-const SingleAllProducat = ({a}) => {
-    const {_id,picture, name, price, rating,status} = a;
+
+const SingleAllProducat = () => {
+
+    const singleToy = useLoaderData();
+    let {_id} = useParams();
+  
+    const[toys, setToys] = useState({});
+  
+    useEffect(() => {
+      if(singleToy){
+        const toysData = singleToy.find(td => td._id === _id);
+        setToys(toysData);
+      }
+    })
+
+  console.log(singleToy)
+  console.log(toys)
     return (
-        <div className="mx-auto p-10">
-           <div className="shop-categoty mx-auto">
-            <img className="mx-auto" src={picture} alt="" />
-            <p className="bookmark badge badge-outline"><AiOutlineHeart></AiOutlineHeart></p> 
-            <h2 className=" text-xl font-bold mb-4 red-violet text-base">{name}</h2>
-            <div className="flex">
-                <p className="mr-8 text-lg">Price: ${price}</p>
-                <p className=" text-lg">Rating: {rating}</p>
+        <div className="all-toy">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-2 items-center justify-center">
+            <div className="ml-5" data-aos="fade-right">
+                <img className=" w-80 my-5 ml-4" src={toys.picture} alt="" />
             </div>
-                      
-            <Link to={`/singletoy/${_id}`}><p className="mt-5 shop-categoty-btn">View Details <FaShareSquare className="ml-2"></FaShareSquare></p></Link>
-                
-            <ToastContainer />
-                
-           </div>
+            <div data-aos="fade-left">
+                <h1 className="text-2xl font-bold mb-2">Toy Name: <span className=" text-pink-600">{toys.name}</span></h1>
+                <h4 className="text-lg font-bold">Seller Name: <span className=" text-pink-600">{toys.seller_name}</span> </h4>
+                <h4 className="text-lg font-bold">Seller Email: <span className=" text-pink-600">{toys.seller_email}</span></h4>
+                <p className="text-lg font-bold">price: <span className=" text-pink-600">{toys.price}</span></p>
+                <p className="text-lg font-bold">Rating: <span className=" text-pink-600">{toys.rating}</span></p>
+                <h3 className="text-lg font-bold">status: <span className=" text-pink-600">{toys.status}</span></h3>
+                <p className=" text-lg font-bold w-90">Description: <span className=" text-slate-700 text-base">{toys.detail_description}</span></p>
+            </div>
+        </div>
+       
         </div>
     );
 };

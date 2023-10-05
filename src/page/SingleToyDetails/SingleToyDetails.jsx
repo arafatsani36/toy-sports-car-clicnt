@@ -1,28 +1,28 @@
+
 import { useLoaderData } from "react-router-dom";
 
 const SingleToyDetails = () => {
     const singletoydetails = useLoaderData();
-    const {picture, toyname, sellerName, email, price, rating, quantity, description} = singletoydetails;
+    const {picture, toyname, sellerName, email, price, rating, quantity, description, category} = singletoydetails;
     console.log(singletoydetails)
 
     return (
-        <div className=" mx-auto">
-           <div className="flex items-center bg-base-100 shadow-xl mx-auto gap-6 p-20">
-            <img className="w-60" src={picture} alt="" />
-                <div>
-                    <h2 className=" text-xl font-bold mb-4 red-violet">{singletoydetails.category}</h2>
-                    <p><span className=" text-lg mr-2">Seller Name :</span> {sellerName}</p>
-                    <p><span className=" text-lg  mr-2">Seller Email :</span> {email}</p>
-                    <div className="flex mt-2">
-                        <p className="mr-8 text-lg ">Price: {price}</p>
-                        <p className=" text-lg ">Rating: {rating}</p>
-                    </div>
-                    <p className="mt-2"><span className=" text-lg   mr-2">Available Quantity :</span> {quantity}</p>
-                    <p className="mt-2"><span className=" text-lg  mr-2">Detail Description :</span> {description}</p>
-                    
-                   
-                </div>
-           </div>
+        <div className="my-toy">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-2 items-center justify-center">
+            <div className="ml-5" data-aos="fade-right">
+                <img className=" w-80 my-5 ml-4" src={picture} alt="" />
+            </div>
+            <div data-aos="fade-left">
+                <h1 className="text-2xl font-bold mb-2">Toy Name: <span className=" text-pink-600">{toyname}</span></h1>
+                <h4 className="text-lg font-bold">Seller Name: <span className=" text-pink-600">{sellerName}</span> </h4>
+                <h4 className="text-lg font-bold">Seller Email: <span className=" text-pink-600">{email}</span></h4>
+                <p className="text-lg font-bold">Category: <span className=" text-pink-600">{category}</span></p>
+                <p className="text-lg font-bold">Quantity: <span className=" text-pink-600">{quantity}</span></p>
+                <p className="text-lg font-bold">price: <span className=" text-pink-600">${price}</span></p>
+                <p className="text-lg font-bold">Rating: <span className=" text-pink-600">{rating}</span> </p>               
+                <p className=" text-lg font-bold w-90">Description: <span className=" text-slate-700 text-base">{description}</span></p>
+            </div>
+        </div>
         </div>
     );
 };

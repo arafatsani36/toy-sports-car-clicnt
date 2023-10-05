@@ -4,10 +4,13 @@ import '../../../Component/Responsive.css'
 import '../../../Component/Style.css'
 import { useContext } from "react";
 import { AuthContext } from "../../../Providers/AuthProvider";
+import { FaMoon, FaSun } from "react-icons/fa";
+import { useEffect } from "react";
+import { useState } from "react";
 
 
 const Navber = () => {
-    const{user,  logOut} = useContext(AuthContext);
+    const{user,  logOut, isDarkTheme, setIsDarkTheme } = useContext(AuthContext);
     const handleLogOut = () => {
         logOut()
         .then(() => {})
@@ -17,11 +20,38 @@ const Navber = () => {
       }
     const item = <>
             <li  className='text-lg nav-item'><Link to='/'>Home</Link></li>
-            <li  className='text-lg nav-item'><Link to='/blog'>Blog</Link></li>
             <li  className='text-lg nav-item'><Link to='/alltoys'>All Toys</Link></li>
             <li  className='text-lg nav-item'><Link to='/addtoy'>Add Toys</Link></li>
             <li  className='text-lg nav-item'><Link to='/mytoy'>My Toys</Link></li> 
     </>
+
+
+
+{/* theme change  */}
+
+const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
+
+  // update state on toggle
+  const handleToggle = (e) => {
+    if (e.target.checked) {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  };
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    const localTheme = localStorage.getItem("theme");
+    // add custom data-theme attribute to html tag required to update theme using DaisyUI
+    document.querySelector("html").setAttribute("data-theme", localTheme);
+  }, [theme]);
+
+
+
+
     return (
         <div className="navbar bg-base-100 header">
         <div className="navbar-start">
@@ -41,11 +71,30 @@ const Navber = () => {
             </ul>
         </div>
         <div className="navbar-end ">
+        
+        {/* theme change start */}
+            
+        <button className="btn btn-square btn-ghost">
+              <label className="swap swap-rotate w-12 h-12">
+                <input
+                  type="checkbox"
+                  onChange={handleToggle}
+                  checked={theme === "dark" ? false : true}
+                />
+                {theme === "light" ? (
+                  <FaSun className=" text-rose-800 text-2xl" />
+                ) : (
+                  <FaMoon className=" text-black text-2xl" />
+                )}
+              </label>
+            </button>
+        {/* theme change end */}
+
         {
            user ? <div className="dropdown dropdown-end dropdown-hover">
                 <img width={45} height={45} className="rounded-full cursor-pointer" src={user?.photoURL} alt="" />
                 <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><Link to="">My Profile</Link></li>
+                    <li><Link to="myprofile">My Profile</Link></li>
                     <li><Link to="/dashboard">Dashboard</Link></li>
                     <li onClick={handleLogOut} className="all-btn">Log Out</li>
                 </ul>

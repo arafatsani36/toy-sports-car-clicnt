@@ -12,7 +12,7 @@ const AllProducat = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [postPerPage, setPostPerPage] = useState(8);
     useEffect(() => {
-        fetch('http://localhost:5000/category')
+        fetch('https://toy-sports-car-server-nine.vercel.app/category')
         .then(res => res.json())
         .then(data => setAllProfuct(data))
     })
@@ -29,7 +29,7 @@ const AllProducat = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 {
                 currentPosts.map(a => <div key={a._id} className="mx-auto p-10">
-                <div className="shop-categoty mx-auto">
+                <div className="shop-categoty mx-auto" data-aos="zoom-in">
                  <img className="mx-auto" src={a.picture} alt="" />
                  <p className="bookmark badge badge-outline"><AiOutlineHeart></AiOutlineHeart></p> 
                  <h2 className=" text-xl font-bold mb-4 red-violet text-base">{a.name}</h2>
@@ -38,7 +38,7 @@ const AllProducat = () => {
                      <p className=" text-lg">Rating: {a.rating}</p>
                  </div>
                            
-                 <Link to=''><p className="mt-5 shop-categoty-btn">View Details <FaShareSquare className="ml-2"></FaShareSquare></p></Link>
+                 <Link to={`/singleallproducat/${a._id}`}><p className="mt-5 shop-categoty-btn">View Details <FaShareSquare className="ml-2"></FaShareSquare></p></Link>
                      
                  <ToastContainer />
                      

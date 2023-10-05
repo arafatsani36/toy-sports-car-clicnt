@@ -9,11 +9,11 @@ const Feedback = () => {
             <div className='feedback'>
             <div className=' md:flex  items-center'>
            
-           <div className="text-center lg:text-left">
+           <div className="text-center lg:text-left" data-aos="fade-right">
                    <img src={feedbackBanner} alt="" />
            </div>
            <div className="card flex-shrink-0 w-full max-w-2xl">
-           <from className="card-body">
+           <from className="card-body" data-aos="fade-left">
                 <div className="form-control">
                 <label className="label">
                     <span className="label-text">Your Name</span>

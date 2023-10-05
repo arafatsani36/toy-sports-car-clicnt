@@ -6,7 +6,7 @@ const PrivetRoutes = ({children}) => {
     const {user, loder} = useContext(AuthContext);
     const location = useLocation();
     if(loder){
-        return <progress className="progress w-56 progress-error mx-auto"></progress>
+        return <progress className="progress w-56 progress-error mx-auto text-center"></progress>
     }
 
     if(user?.email){

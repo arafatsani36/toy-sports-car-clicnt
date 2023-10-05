@@ -20,31 +20,23 @@ const SingleToy = () => {
 
     // console.log(c)
     return (
-        <div>
-            <div className="card card-side bg-base-100 shadow-xl mx-auto ">
-            <figure><img src={toys.picture} alt="Movie"/></figure>
-            <div className="card-body w-1/2">
-                <h2 className="card-title">Name: {toys.name}</h2>
-                <div className="flex">
-                    <div className="mr-20">
-                        <p>Price: {toys.price}</p>
-                    </div>
-                    <div>
-                    <p>Rating: {toys.rating}</p>
-                    </div>
-                </div>
-                <p>Seller Name: {toys.seller_name}</p>
-                <p>Seller Email: {toys.seller_email}</p>
-                <p>Available Quantity: {toys.available_quantity}</p>
-                <p>Detail Description: {toys.detail_description}</p>
-
-                
-                <div className="card-actions justify-start">
-                <button className="btn btn-primary">Bye Now</button>
-                </div>
-            </div>
-            </div>
+        <div className="my-toy">
+        <div className=" grid md:grid-cols-2 lg:grid-cols-2 items-center justify-center">
+          <div className="ml-5" data-aos="fade-right">
+              <img className=" w-80 my-5 ml-4" src={toys.picture} alt="" />
+          </div>
+          <div data-aos="fade-left">
+              <h1 className="text-2xl font-bold mb-2">Toy Name: <span className=" text-pink-600">{toys.name}</span></h1>
+              <h4 className="text-lg font-bold">Seller Name: <span className=" text-pink-600">{toys.seller_name}</span> </h4>
+              <h4 className="text-lg font-bold">Seller Email: <span className=" text-pink-600">{toys.seller_email}</span></h4>
+              <p className="text-lg font-bold">price: <span className=" text-pink-600">${toys.price}</span></p>
+              <p className="text-lg font-bold">Rating: <span className=" text-pink-600">{toys.rating}</span> </p>
+              <h3 className="text-lg font-bold">Available Quantity: <span className=" text-pink-600">{toys.available_quantity}</span></h3>
+              <p className=" text-lg font-bold w-90">Description: <span className=" text-slate-700 text-base">{toys.detail_description}</span></p>
+          </div>
         </div>
+         
+      </div>
     );
 };
 

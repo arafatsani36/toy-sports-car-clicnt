@@ -44,15 +44,15 @@ const Review = () => {
         modules={[Pagination]}
         className="mySwiper"
       >
-
+       
         {
           review.map((reviews , index) => <SwiperSlide key={`${review._id}_${index}`} reviews={reviews}>
             <div className=''>
-                <div className='flex items-center mx-auto mt-10 mb-5'>
+                <div className='flex items-center mx-auto mt-10 mb-5' data-aos="zoom-in">
                       <img className=' rounded-full w-28 mx-auto review-img' src={reviews.authorImage} alt="" />
                 </div>
                   
-                  <div className=''>
+                  <div className='' data-aos="zoom-in-up">
                       <h2><BsFillChatRightQuoteFill></BsFillChatRightQuoteFill> {reviews.description}</h2>
                       
                       <div className='flex justify-between  mt-3'>
@@ -71,7 +71,8 @@ const Review = () => {
 
           </SwiperSlide>)
         } 
-       
+        
+
       </Swiper>
     </div>
   );

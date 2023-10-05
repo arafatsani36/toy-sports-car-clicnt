@@ -1,16 +1,19 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Navber from "../page/Shared/Navber/Navber";
 import Footer from "../page/Shared/Footer/Footer";
 
 const Main = () => {
+    const location = useLocation();
+    const noNavbarFooter = location.pathname.includes('myprofile')
     return (
         <div>
-             <Navber></Navber> 
+             {noNavbarFooter || <Navber></Navber>}
 
             <div className=" min-h-[calc(100vh-200px)]">
                 <Outlet></Outlet>
             </div>
-             <Footer></Footer> 
+
+            {noNavbarFooter || <Footer></Footer>}
         </div>
     );
 };
